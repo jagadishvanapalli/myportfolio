@@ -1,8 +1,10 @@
 *{
-    background-color:black;
-    margin:0;
-    box-sizing:0;
     font-family: 'Times New Roman', Times, serif;
+}
+#main{
+    width:100%;
+    min-height:350vh;
+    background-color:black;
 }
 nav ul{
     list-style-type:none;
@@ -27,9 +29,13 @@ nav ul li a::after{
     display:block;
     border-radius:5px;
 }
+nav li a:hover{
+    color:white;
+}
 nav li a:hover::after{
     width:100%;
     transition:width 0.3s linear;
+    color:white;
 }
 nav li a:hover span{
     color:rgb(73, 167, 73);
@@ -51,28 +57,30 @@ nav li a:hover span{
     margin-top:50px;
     position: relative;
 }
+#main-content p{
+    color:white;
+}
+#main-content p span{
+    color:rgb(73, 167, 73);
+}
  img{
     width:auto;
     height:400px;
     float:left;
     border-radius:15px;
-    margin:10px;
-}
-#main-content h3{
-    font-size:25px;
-    font-weight:600;
-    color:white;
+    margin-right:10px;
     margin-left:10px;
 }
-#main-content h3 span{
-    color:rgb(73, 167, 73);
+#sidetitle{
     font-size:30px;
+    color:rgb(73, 167, 73);
+    font-weight:600;
 }
-center{
+#personalinfo u{
     color:rgb(73, 167, 73);
     font-size:30px;
     font-weight:600;
-    margin-top:50px;
+    float:left;
 }
 #personalinfo{
     width:100%;
@@ -90,15 +98,16 @@ h3{
     color:rgb(73, 167, 73);
     font-size:30px;
     font-weight:600;
+    margin-top:100px;
 }
-.intrests{
+.container{
     width:50%;
     height:auto;
     display:grid;
     grid-template-columns: 50% 50% ;
     grid-template-rows:100px 100px 50px;
 }
-.grid-item{
+.col-md-6{
     display:flex;
     background-color:white;
     align-items:center;
@@ -107,8 +116,9 @@ h3{
     margin:10px;
     width:auto;
     height: auto;
+    border:1px solid white;
 }
-.grid-item img{
+.col-md-6 img{
     width:15%;
     height:auto;
     background-color:transparent;
@@ -151,8 +161,7 @@ h3{
 #achivement{
     width:100%;
     margin:10px;
-    height:auto;
-    margin-bottom:300px;
+    min-height:400px;
 }
 #achivement p{
     color:white;
@@ -161,35 +170,50 @@ h3{
 #achivement p span{
     color:rgb(73, 167, 73);
 }
-#achivement a{
+.image-block {
+    display:flex;
+    justify-items:center;
+    position:relative;
+}
+.image-block img{
+   width:25%;
+   height:auto;
+}
+.text-block {
+    position: absolute;
+    color: white;
+    left:48%;
+    bottom:10px;
+    margin-bottom:10px;
+  }
+.text-block a{
     text-decoration:none;
     color:white;
-    background-color: rgb(61, 61, 254);
-    padding:10px;
-    font-size:20px;
-    font-weight:600;
-    border-radius:10px;
-    float:right;
-    margin-right:50%;
-    margin-top:250px;
-    transition:border-radius 1s linear;
-}
-#achivement img{
-    width:25%;
-    height:auto;
-}
-#achivement a:hover{
- background-color:rgb(59, 84, 241);
- border-radius:25px;
+    font-size:15px;
+    padding:5px;
+    background-color: rgb(0, 81, 255);
+    border-radius:25px;
+    transition: background-color 1s linear;
+} 
+.text-block a:hover{
+    color:rgb(0, 81, 255);
+    background-color:white;
 }
 @media(max-width:768px){
     nav ul li{
         display:block;
     } 
-    .intrests{
-        position:relative;
-        grid-template-columns:100%;
-        grid-template-rows:100px 100px 50px;
-
+    .image-block img{
+        width:70%;
+        height:auto;
+     }
+     .text-block a{
+        font-size:10px;
+        padding:2px;
+     }
+     #main{
+        width:100%;
+        min-height:350vh;
+        background-color:black;
     }
 }

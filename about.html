@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>About</title>
 </head>
 <body>
+   <div id="main">
     <nav>
         <ul>
             <li><a href="index.html"><span>H</span>ome</a></li>
@@ -20,17 +22,17 @@
         </ul>
     </nav>
  <div id="main-content">
-        <img src="images/1722838086608.jpg" alt="na-photo">
-        <br>
-        <h3> Recent <span>computer science</span> graduate with hands-on experience in programming languages such as <span>Python, Java, htm&css ,Javascript and freamworks like bootstrap and ReactJs</span>. Developed several projects during 
-            academic coursework and internships, demonstrating strong problem-solving abilities and a passion for coding. 
-            Looking to start my career in a tech-savvy environment where I can grow my skills and contribute to innovative software solutions.
-        </h3>
+        <img src="images/1722838086608.jpg"  alt="na-photo">
+        <p class="h4">Recent computer science graduate with hands-on experience in programming languages such as <span>Python, Java, htm&css ,Javascript
+            and freamworks like bootstrap and ReactJs</span>. Developed several projects during academic coursework and internships, demonstrating strong
+             problem-solving abilities and a passion for coding. Looking to start my career in a tech-savvy environment where I can grow my skills 
+             and contribute to innovative software solutions.</p>
  </div>
- <CENTER><U>PERSONAL INFORMATION</U></CENTER>
+ <div id="sidetitle">
+    <U>PERSONAL INFORMATION</U>
+</div>
  <div id="personalinfo">
-    
-    <table>
+    <table class="table table-borderless">
         <tr>
             <td>NAME </td>
             <td>:</td>
@@ -64,29 +66,36 @@
     </table>
  </div>
  <div id="achivement">
-   <h3>ACHIVEMENTS____</h3>
-   <P>
-            I secured I Prize in <span>STUDWEBER</span> in TECHSPARKS-2K23, A State Level
-        Technical Event Organized by the Department of Computer Science on 29th November, 2023
-        at Sri Durga Malleswara Siddhartha Mahila Kalasala, Vijayawada-10.
-   </P>
-   <img src="images/winning.jpg" alt="image">
-   <a href="documents/winnigcertificate.pdf">Certification</a>
+        <h3>ACHIVEMENTS____</h3>
+        <blockquote class="blockquote">
+            <p> Isecured I Prize in <span>STUDWEBER</span> in TECHSPARKS-2K23, A State Level
+                Technical Event Organized by the Department of Computer Science on 29th November, 2023
+                at Sri Durga Malleswara Siddhartha Mahila Kalasala,Vijayawada-10.</p>
+        </blockquote>
+        <div class="image-block">
+            <img src="images/winning.jpg" class="rounded mx-auto d-block" alt="image">
+            <div class="text-block">
+                <a href="documents/winnigcertificate.pdf">Certification</a>
+              </div>
+        </div>
  </div>
- <h3>INTRESTS_____</h3>
- <div class="intrests">
-    <div class="grid-item"> <img src="images/softwaredev.png" alt="oops">SOFTWARE <BR>DEVELOPMENT</div>
-    <div class="grid-item"><img src="images/web.png" alt="oops"> WEB <br>DEVELOPMENT</div>
-    <div class="grid-item"><img src="images/uiux.png" alt="oops"> UI UX <br> DESGINER</div>
-    <div class="grid-item"><img src="images/ps.png" alt="oops"> PHOTOEDITING</div>
+ <div>
+    <h3>  INTRESTS_____</h3>
  </div>
- <div id="social-media">
-    <ul>
-        <li><a href="https://www.linkedin.com/in/vanapalli-jagadish-kumar-89b524285"><span>Linkedin</span><i class="fa-brands fa-linkedin-in"></i></a></li>
-        <li><a href="https://github.com/jagadishvanapalli"><span>Github</span><i class="fa-brands fa-square-github"></i></a></li>
-        <li><a href="mailto:nanivanapalli66@gmail.com"><span>Email</span><i class="fa-solid fa-envelope"></i></a></li>
-        <li><a href="https://www.instagram.com/nani___prince?igsh=bmc1MXJ2bnN3emho"><span>Instagram</span><i class="fa-brands fa-instagram"></i></a></li>
-    </ul>
-</div>
+ <div class="container">
+    <div class="col-md-6"> <img src="images/softwaredev.png" alt="oops">SOFTWARE <BR>DEVELOPMENT</div>
+    <div class="col-md-6"><img src="images/web.png" alt="oops"> WEB <br>DEVELOPMENT</div>
+    <div class="col-md-6"><img src="images/uiux.png" alt="oops"> UI UX <br> DESGINER</div>
+    <div class="col-md-6"><img src="images/ps.png" alt="oops"> PHOTOEDITING</div>
+ </div>
+    <div id="social-media">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/vanapalli-jagadish-kumar-89b524285"><span>Linkedin</span><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/jagadishvanapalli"><span>Github</span><i class="fa-brands fa-square-github"></i></a></li>
+            <li><a href="mailto:nanivanapalli66@gmail.com"><span>Email</span><i class="fa-solid fa-envelope"></i></a></li>
+            <li><a href="https://www.instagram.com/nani_____prince?igsh=bmc1MXJ2bnN3emho"><span>Instagram</span><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+    </div>
+   </div>
 </body> 
 </html>
