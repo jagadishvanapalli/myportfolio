@@ -2,23 +2,22 @@
     background-color:black;
     height:800px;
 }
-nav ul{
-    width:100%;
-    list-style-type:none;
-    box-shadow:0 2px 20px white;
+.container-fluid{
     background-color:black;
 }
-nav ul li{
-    display:inline-flex;
-    margin:15px 14px;
-}
-nav ul li a{
+.nav-item a{
     color:white;
-    text-decoration:none;
     font-size:20px;
+    margin-left:15px;
     font-weight:600;
 }
-nav ul li a::after{
+.nav-item a:hover{
+    color:white;
+}
+.nav-item a:hover span{
+    color:rgb(73, 167, 73);
+}
+.nav-item a::after{
     content:'';
     width:0;
     height:4px;
@@ -27,19 +26,9 @@ nav ul li a::after{
     display:block;
     border-radius:5px;
 }
-nav li a:hover{
-    color:white;
-}
-nav li a:hover::after{
+.nav-item  a:hover::after{
     width:100%;
     transition:width 0.3s linear;
-    color:white;
-}
-nav li a:hover span{
-    color:rgb(73, 167, 73);
-}
-#activea span {
-    color:rgb(73, 167, 73);
 }
 #activea::after{
     content:"";
@@ -47,6 +36,10 @@ nav li a:hover span{
     height:4px;
     background-color:rgb(73, 167, 73);
     display:block;
+}
+.navbar-toggler-icon i{
+    color:white;
+    font-size:25px;
 }
 .container{
     background-color:white;

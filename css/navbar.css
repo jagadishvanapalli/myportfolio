@@ -1,16 +1,11 @@
-
-.container-XXL{
-    background-color:black;
-    height:750px
-}
 .container-fluid{
     background-color:black;
 }
 .nav-item a{
-    color:white;
-    font-size:20px;
-    margin-left:15px;
-    font-weight:600;
+color:white;
+font-size:20px;
+margin-left:15px;
+font-weight:600;
 }
 .nav-item a:hover{
     color:white;
@@ -41,25 +36,4 @@
 .navbar-toggler-icon i{
     color:white;
     font-size:25px;
-}
-.row{
-    width:100%;
-    background-color:black;
-    padding:10px
-}
-.col-md-3{
-    min-height:50px;
-    line-height:50px;
-    margin:10px;
-    color:white;
-    font-size:20px;
-    font-weight:600;
-}
-.col-md-3 a{
-    text-decoration:none;
-    color:black;
-    background-color:white;
-    font-size:15px;
-    padding:10px;
-    border-radius:50%;
 }
