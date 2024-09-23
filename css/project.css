@@ -1,7 +1,7 @@
-.container-XXL{
+*{
     background-color:black;
-    height:800px;
 }
+
 .container-fluid{
     background-color:black;
 }
