@@ -57,6 +57,11 @@
     background-repeat:no-repeat;
     background-size: cover;
 }
+.col-md-3:nth-child(2){
+    background-image:url('https://cdn.sanity.io/images/599r6htc/regionalized/de05a24e612dd5c146e499fe553e236de0b5de77-1080x541.png?w=1200&q=70&fit=max&auto=format');
+    background-repeat:no-repeat;
+    background-size: cover;
+}
 .col-md-3 a{
     text-decoration:none;
     display:none;
